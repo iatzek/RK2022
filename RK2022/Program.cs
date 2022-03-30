@@ -7,7 +7,15 @@ namespace RK2022
         static void Main(string[] args)
         {
             // ax2 + bx + c = 0
-            double a = 1, b = 2, c = -10;
+            double a, b, c;
+
+            Console.WriteLine("ax^2+bx+c=0");
+            Console.WriteLine("Podaj a");
+            a = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj b");
+            b = Double.Parse(Console.ReadLine()); 
+            Console.WriteLine("Podaj c");
+            c = Double.Parse(Console.ReadLine());
 
             double delta = b * b - 4 * a * c;
 
