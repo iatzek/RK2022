@@ -19,11 +19,16 @@ namespace RK2022
 
             double delta = b * b - 4 * a * c;
 
-            double x1 = (-b - Math.Sqrt(delta)) / 2 * a;
-            double x2 = (-b + Math.Sqrt(delta)) / 2 * a;
+            if (delta >= 0)
+            {
+                double x1 = (-b - Math.Sqrt(delta)) / 2 * a;
+                double x2 = (-b + Math.Sqrt(delta)) / 2 * a;
 
-            Console.WriteLine("x1={0} x2={1}", x1, x2);
-
+                Console.WriteLine("x1={0} x2={1}", x1, x2);
+            } else
+            {
+                Console.WriteLine("brak rozwiązań");
+            }            
 
         }
     }
